@@ -130,14 +130,17 @@
             z-index: 10;
         }
 
-        .download-button {
+        .download-buttons {
             position: absolute;
             bottom: 55px;
             left: 450px;
             z-index: 10;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
         }
 
-        .download-button a {
+        .download-buttons a {
             background: linear-gradient(to right, #d2b48c, #8b4513);
             color: white;
             padding: 15px 30px;
@@ -148,9 +151,10 @@
             align-items: center;
             gap: 10px;
             transition: transform 0.3s ease;
+            white-space: nowrap;
         }
 
-        .download-button a:hover {
+        .download-buttons a:hover {
             transform: scale(1.05);
         }
 
@@ -398,7 +402,7 @@
                 margin-bottom: 20px;
             }
 
-            .download-button {
+            .download-buttons {
                 left: 50px;
                 bottom: 120px;
             }
@@ -434,9 +438,10 @@
             <div class="slide" style="background-image: url(photo/cf3.png)"></div>
         </div>
         <h1 class="game-title">The Coffee Tales</h1>
-        <div class="download-button">
+        <div class="download-buttons">
             <a href="#download"><i class="fas fa-download"></i> Télécharger</a>
-            <a href="Rapport de Projet.pdf"><i class="fas fa-file-alt"></i> Rapport</a>
+            <a href="Rapport de Projet.pdf"><i class="fas fa-file-alt"></i> Rapport Projet</a>
+            <a href="Rapport de projet court.pdf"><i class="fas fa-file-code"></i> Rapport Allégé</a>
         </div>
         <div class="slider-nav">
             <button class="active" onclick="changeSlide(0)"></button>
