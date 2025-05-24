@@ -186,12 +186,30 @@
             gap: 40px;
             background: transparent;
             margin: 20px 0;
+            position: relative;
+        }
+
+        /* Emplacement pour le logo - repositionné */
+        .logo-container {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            width: 200px;
+            height: 200px;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         .inspiration-text {
             flex: 1;
             text-align: left;
             padding: 20px;
+            margin-left: 240px; /* Espace pour le logo */
         }
 
         .inspiration-text h2 {
@@ -353,6 +371,18 @@
                 flex-direction: column;
             }
 
+            .inspiration-text {
+                margin-left: 0;
+            }
+
+            .logo-container {
+                position: static;
+                transform: none;
+                width: 200px;
+                height: 200px;
+                margin: 0 auto 20px;
+            }
+
             .inspiration-slider {
                 width: 100%;
                 max-width: 400px;
@@ -399,9 +429,9 @@
     <div class="slider-container">
         <div class="overlay"></div>
         <div class="slider">
-            <div class="slide active" style="background-image: url(photo/sackboy-featured.webp)"></div>
-            <div class="slide" style="background-image: url('photo/sackboy-a-big-adventure-ps5-a75c05ed.jpg')"></div>
-            <div class="slide" style="background-image: url('photo/Sackboy-A-Big-Adventure-5.webp')"></div>
+            <div class="slide active" style="background-image: url(photo/cf2.png)"></div>
+            <div class="slide" style="background-image: url(photo/cf6.png)"></div>
+            <div class="slide" style="background-image: url(photo/cf3.png)"></div>
         </div>
         <h1 class="game-title">The Coffee Tales</h1>
         <div class="download-button">
@@ -416,6 +446,11 @@
     </div>
 
     <section class="inspiration-section" id="inspi">
+        <!-- Logo repositionné à gauche -->
+        <div class="logo-container">
+            <img src="photo/logocf.png" alt="Logo">
+        </div>
+        
         <div class="inspiration-text">
             <h2>Inspiration</h2>
             <p>Découvrez les différents jeux qui ont stimulé notre créativité pour ce projet et qui nous ont fourni toute l'inspiration nécessaire a la production de notre jeux. </p>
@@ -498,4 +533,3 @@
     </script>
 </body>
 </html>
-      
